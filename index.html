@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Studio Y｜Web制作を、ちゃんと速く。</title>
+  <meta name="description" content="更新しやすい設計と、崩れないレスポンシブ。実務を意識した丁寧なコーディングで手戻りを減らします。" />
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top" aria-label="Studio Y">Studio Y</a>
+
+    <nav class="navlinks" aria-label="メインナビゲーション">
+      <a href="#features">特徴</a>
+      <a href="#works">実績</a>
+      <a href="#pricing">料金</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">問い合わせ</a>
+    </nav>
+
+    <a class="btn primary" href="#contact">無料相談</a>
+
+    <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-nav">
+  <a href="#features">特徴</a>
+  <a href="#works">実績</a>
+  <a href="#pricing">料金</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">問い合わせ</a>
+</div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Web制作を、ちゃんと速く。</h1>
+        <p class="lead">
+          更新しやすい設計と、崩れないレスポンシブ。<br />
+          手戻りを減らす“丁寧な実装”を目指します。
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#contact">無料相談</a>
+          <a class="btn" href="#works">制作実績を見る</a>
+        </div>
+
+        <ul class="hero-points">
+          <li>レスポンシブ対応</li>
+          <li>更新しやすい構造</li>
+          <li>軽量なJSで快適に</li>
+        </ul>
+      </div>
+
+      <div class="hero-panel">
+        <div class="panel">
+          <h2 class="panel-title">対応できること</h2>
+          <ul class="panel-list">
+            <li>HTML/CSSの新規実装・改修</li>
+            <li>LP・採用ページの制作</li>
+            <li>軽微なJS（アコーディオン等）</li>
+            <li>画像差し替え・文言更新</li>
+          </ul>
+
+          <div class="panel-mini">
+            <p class="mini-title">納品のイメージ</p>
+            <p class="mini-text">GitHub / zip納品 / 更新しやすい構造メモ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">特徴</h2>
+        <p class="section-desc">「読みやすい」「直しやすい」「崩れない」を優先。</p>
+      </div>
+
+      <div class="grid3">
+        <article class="card">
+          <div class="icon" aria-hidden="true">📱</div>
+          <h3>崩れないレスポンシブ</h3>
+          <p>スマホからPCまで、読みやすさ優先のレイアウト設計。</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">🧩</div>
+          <h3>更新しやすい構造</h3>
+          <p>クラス設計と部品化で、あとから触る人に優しいコード。</p>
+        </article>
+
+        <article class="card">
+          <div class="icon" aria-hidden="true">⚡</div>
+          <h3>表示速度も意識</h3>
+          <p>軽量なCSS/JSと画像最適化で、体感の速さを担保。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">制作実績（架空）</h2>
+        <p class="section-desc">ポートフォリオ用に、構成と実装を丁寧に作りました。</p>
+      </div>
+
+      <div class="works-grid">
+        <article class="work card">
+          <div class="work-top">
+            <span class="chip">LP</span>
+            <span class="chip ghost">レスポンシブ</span>
+          </div>
+          <h3>採用LP</h3>
+          <p>募集要項〜FAQまで1ページに集約。導線をシンプルに。</p>
+          <ul class="mini-list">
+            <li>Grid/Flex</li>
+            <li>CTA配置</li>
+            <li>余白調整</li>
+          </ul>
+        </article>
+
+        <article class="work card">
+          <div class="work-top">
+            <span class="chip">Service</span>
+            <span class="chip ghost">カードUI</span>
+          </div>
+          <h3>サービス紹介</h3>
+          <p>カードUI＋料金表で比較しやすく、離脱を防ぐ設計。</p>
+          <ul class="mini-list">
+            <li>料金表</li>
+            <li>見出し設計</li>
+            <li>可読性</li>
+          </ul>
+        </article>
+
+        <article class="work card">
+          <div class="work-top">
+            <span class="chip">Form</span>
+            <span class="chip ghost">UX</span>
+          </div>
+          <h3>フォーム改善</h3>
+          <p>入力補助とエラー表示で、ストレスを減らす。</p>
+          <ul class="mini-list">
+            <li>バリデーション</li>
+            <li>エラーメッセージ</li>
+            <li>離脱対策</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">料金（架空）</h2>
+        <p class="section-desc">比較しやすいように、よくある3プランで整理。</p>
+      </div>
+
+      <div class="pricing">
+        <article class="price">
+          <h3>ライト</h3>
+          <div class="yen">¥30,000</div>
+          <p class="price-desc">まず1枚だけ作りたい方向け</p>
+          <ul>
+            <li>1ページ</li>
+            <li>簡易フォーム</li>
+            <li>レスポンシブ</li>
+          </ul>
+          <a class="btn w100" href="#contact">相談する</a>
+        </article>
+
+        <article class="price featured">
+          <div class="ribbon">人気</div>
+          <h3>スタンダード</h3>
+          <div class="yen">¥80,000</div>
+          <p class="price-desc">反応を取りに行く構成</p>
+          <ul>
+            <li>3〜5ページ</li>
+            <li>導線設計</li>
+            <li>基本SEO（構造）</li>
+          </ul>
+          <a class="btn primary w100" href="#contact">無料相談</a>
+        </article>
+
+        <article class="price">
+          <h3>保守</h3>
+          <div class="yen">¥10,000<span class="small">/月</span></div>
+          <p class="price-desc">更新を止めない運用向け</p>
+          <ul>
+            <li>軽微修正</li>
+            <li>更新サポート</li>
+            <li>相談窓口</li>
+          </ul>
+          <a class="btn w100" href="#contact">相談する</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">FAQ</h2>
+        <p class="section-desc">よくある疑問を先回りして解消。</p>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            既存サイトの修正だけでもOK？
+            <span class="faq-icon" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>可能です。崩れ直し・文言差し替えなど小さな作業も対応します。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            納期はどれくらい？
+            <span class="faq-icon" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>1ページなら最短1週間〜。内容により調整します。</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" type="button">
+            素材がなくても作れますか？
+            <span class="faq-icon" aria-hidden="true">＋</span>
+          </button>
+          <div class="faq-a">
+            <p>仮素材で先に組み、後から差し替え可能な形で進めます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">お問い合わせ</h2>
+        <p class="section-desc">
+          ※本フォームはポートフォリオ用のため、送信は行われません。（バリデーション実装例）。
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-note">
+          <div class="card note-card">
+            <h3>担当可能な業務</h3>
+            <ul class="note-list">
+              <li>LP制作</li>
+              <li>jQueryを用いた基本的なDOM操作・イベント実装（アコーディオン等）</li>
+              <li>画像調整・書き出し<br>※デザイン制作ではなく、既存データの調整・最適化が中心です</li>              
+            </ul>
+
+            <h3>実装時に意識している点</h3>
+            <ul class="note-list">
+              <li>画像はWebP対応やサイズ最適化を行い、表示速度に配慮</li>
+              <li>不要なJavaScriptを増やさず、保守性を優先</li>
+              <li>システムフォントを使用し、軽量で安定した表示を重視</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm" class="form card" novalidate>
+            <div class="field" data-field="name">
+              <label for="name">氏名（必須）</label>
+              <input id="name" name="name" autocomplete="name" />
+              <p class="error">氏名を入力してください</p>
+            </div>
+
+            <div class="field" data-field="email">
+              <label for="email">メール（必須）</label>
+              <input id="email" name="email" inputmode="email" autocomplete="email" placeholder="example@sample.com" />
+              <p class="error">メール形式をご確認ください</p>
+            </div>
+
+            <div class="field" data-field="type">
+              <label for="type">相談内容（必須）</label>
+              <select id="type" name="type">
+                <option value="">選択してください</option>
+                <option value="lp">LP制作</option>
+                <option value="update">更新・修正</option>
+                <option value="other">その他</option>
+              </select>
+              <p class="error">相談内容を選択してください</p>
+            </div>
+
+            <div class="field" data-field="message">
+              <label for="message">内容（必須・10文字以上）</label>
+              <textarea id="message" name="message" placeholder="例）採用ページの文言修正をお願いしたい"></textarea>
+              <p class="error">内容は10文字以上でお願いします。</p>
+            </div>
+
+            <div class="field" data-field="agree">
+              <label class="check">
+                <input id="agree" name="agree" type="checkbox" />
+                個人情報の取り扱いに同意する（必須）
+              </label>
+              <p class="error">同意が必要です。</p>
+            </div>
+
+            <button class="btn primary w100" type="submit">送信</button>
+            <p class="form-foot">※このフォームはポートフォリオ用で、送信は行われません。</p>
+          </form>
+
+          <div id="done" class="card done" hidden>
+            <h3>送信完了</h3>
+            <p class="muted">実務ではサンクスページに遷移 or メッセージ表示をします。</p>
+            <a class="btn" href="#contact">もう一度入力する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© Studio Y（架空）</p>
+    <a href="#top" class="to-top">▲ 上へ</a>
+  </div>
+</footer>
+
+<script src="./js/main.js" defer></script>
+</body>
+</html>
